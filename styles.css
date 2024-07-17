@@ -1,5 +1,6 @@
 body{
     display: flex;
+    /* flex-direction: column; */
     background-color: #f7f3e6;
     /* background-image: url('\pictures\bgimage.jpg'); */
 }
@@ -9,10 +10,9 @@ body{
     flex-direction: row;
     justify-content: flex-end;
     gap: 25px;
-    position: -webkit-sticky;
-    position: relative;
-    top: 10%;
-    width:100%;
+    position: fixed;
+    top: 1%;
+    width:97%;
     height:40px;
     border-radius: 15px;
     background-color:#fff;
@@ -22,6 +22,7 @@ body{
     /* margin-top: 10px; */
     padding: 5px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, .1);
+    z-index: 1;
 }
 
 .top > h1 {
@@ -31,8 +32,8 @@ body{
     font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
-    font-size: large;
-    letter-spacing: 2.5px;
+    font-size: 1.2rem;
+    letter-spacing: 1.2px;
     margin: 2px;
     padding: 2px;
     text-align: center;
@@ -44,7 +45,7 @@ body{
 
   .top > h1:hover{
     font-weight: 1500;
-    letter-spacing: 4px;
+    letter-spacing: 2.5px;
     color: rgba(237, 53, 12, 0.88);
     overflow: hidden;
   }
@@ -57,9 +58,9 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
     text-align: center;
-    font-weight: bold;
+    font-weight: normal;
     letter-spacing: 1px;
-    transition: color 0.25s ease-in-out;
+    transition: color 0.3s ease-in-out;
     
 }
 
@@ -68,7 +69,7 @@ body{
     /* font-weight: bold; */
 }
 
-.top> a:active{
+.top > a.active{
     color: rgba(237, 53, 12, 0.88);
 }
 
@@ -81,6 +82,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    overflow: auto;
     /* background-color: bisque; */
 }
 
@@ -112,7 +114,7 @@ body{
     /* left: 45%; */
     position: relative;
     top: 10px;
-    width:auto;
+    width:800px;
     height:auto;
     margin:20px;
     margin-left:60px;
@@ -132,6 +134,7 @@ body{
     text-align: left;
     font-weight: 900;
     transition: color 0.3s ease-in-out;
+    width:45%;
 }
 
 .intro> h1:hover{
@@ -178,7 +181,7 @@ body{
     flex-direction: row;
     justify-content: flex-end;
     gap: 25px;
-    position: absolute;
+    position: fixed;
     top: 92%;
     width: 97%;
     height: 28px;
@@ -192,7 +195,7 @@ body{
 
 .bottom_left{
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 2%;
     display: flex;
     flex-direction: row;
@@ -202,10 +205,11 @@ body{
     padding:auto;
     /* background-color: burlywood; */
     height:25px;
-    width:40%;
+    width:30%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: left;
     font-weight: normal;
+    font-size: small;
     /* background-color: mediumaquamarine; */
 }
 
@@ -227,7 +231,7 @@ body{
     padding:1px;
     /* background-color: burlywood; */
     height:22px;
-    width:25%;
+    width:22%;
 }
 
 
