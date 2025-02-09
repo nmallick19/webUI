@@ -9,19 +9,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet:wght@100..400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dark-theme.css" disabled id="dark-theme">
 </head>
 <body>
-    <div class="top">
+    <header class="top">
         <h1>Neelkamal.</h1>
         <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
         <a href="publication.html" class="active">Publications</a>
+        <a href="research.html">Research</a>
         <a href="collaborators.html">Collaborators</a>
         <a href="contact.html">Contact</a>
-    </div>
+    </header>
 
-    <div class="midpanel">
-        
+    <div class="midpanel-publications">
+        <div class="publications">
+            <h2>Publications</h2>
+            <div class="pub-toggle">
+                <button id="defaultBtn" class="pub-toggle-btn active" onclick="togglePublicationList('default')">
+                    Journal Publications
+                </button>
+                <button id="otherBtn" class="pub-toggle-btn" onclick="togglePublicationList('other')">
+                    Conference Proceedings
+                </button>
+            </div>
+            <div class="pub-list">
+                <!-- Publications will be loaded dynamically -->
+            </div>
+        </div>
     </div>
 
     <div class="bottom">
@@ -40,7 +54,7 @@
         </div>
     </div>
     
-
+    <script src="publications.js"></script>
 
     <!-- <a href="#">Link</a>
     <section class="sect" id="vision">

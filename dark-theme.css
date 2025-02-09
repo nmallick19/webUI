@@ -1,0 +1,82 @@
+/* Dark theme colors and overrides */
+:root {
+    --primary-blue: rgb(100, 150, 255);
+    --accent-orange: rgba(255, 99, 71, 0.88);
+    --teal: rgb(64, 224, 208);
+    --text-gray: rgb(200, 200, 200);
+    --background: #1a1a1a;
+    --white: #2d2d2d;
+    --card-bg: #2d2d2d;
+    --shadow: rgba(0, 0, 0, .3);
+}
+
+/* Override base styles for dark theme */
+body {
+    background-color: var(--background);
+}
+
+.top, .bottom {
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 4px var(--shadow);
+}
+
+.top > h1 {
+    color: var(--primary-blue);
+}
+
+.top > h1:hover {
+    color: var(--accent-orange);
+}
+
+.top > a {
+    color: var(--primary-blue);
+}
+
+.top > a:hover {
+    color: var(--accent-orange);
+}
+
+.top > a.active {
+    color: var(--accent-orange);
+}
+
+/* Profile section */
+.dp {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.dp:hover {
+    box-shadow: 0 4px 4px var(--teal);
+}
+
+/* Introduction section */
+.intro > h1 {
+    color: var(--primary-blue);
+}
+
+.intro > h1:hover {
+    color: var(--accent-orange);
+}
+
+.intro > h2 {
+    color: var(--teal);
+}
+
+.intro > ul,
+.intro > p {
+    color: var(--text-gray);
+}
+
+/* Footer section */
+.bottom_left > a {
+    color: var(--text-gray);
+}
+
+.bottom_left > a:hover {
+    color: var(--primary-blue);
+}
+
+/* Invert icons for better visibility */
+.bottom_right img {
+    filter: invert(0.8);
+} 
